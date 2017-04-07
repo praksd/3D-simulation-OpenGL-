@@ -1,0 +1,32 @@
+HOW TO COMPILE
+
+run the makefile using make command
+if the make command gives errors,
+run the command:
+g++ `pkg-config --cflags glfw3` -o game2 game2.cpp glad.c `pkg-config --static --libs glfw3`
+
+
+GAME
+
+-> About the game
+the game consists of a 10X10 board.
+You need to make the block reach the hole.
+Falling in the non-grid area will make u lose your life.
+You get 3 lives for the game...use them wisely..
+
+
+->Control
+
+Left arrow (->) : 90 dergree rotation from original position to left with one poistion increased in left.
+Right arrow(<-) : 90 dergree rotation from original position to right with one poistion increased in right.
+Up arrow : 90 dergree rotation from original position to up with one poistion increased in up.
+Down arrow : 90 dergree rotation from original position to down with one poistion increased in down.
+A : tower view
+S : top view
+R : rotate the camera right in tower view
+T : Adventure view
+F : Follow Camera
+LEFT MOUSE CLICK AND DRAG : helicopter view by mouse
+Q : quit
+
+
